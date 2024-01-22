@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <link rel="shortcut icon" type="x-icon" href="img/small.png">
+    <link rel="stylesheet" href="css/addtocart.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="shortcut icon" type="x-icon" href="img/small.png">
+</head>
+<body>
+    <nav class="navbar"></nav>
+    <script src="js/nav.js"></script>
+    <div class="container">
+        <!-- ... (existing container content) ... -->
+    </div>
+    <div id="root"></div> <!-- Move this line outside the container -->
+    <div class="sidebar">
+        <div class="head"><p>My Cart</p></div>
+        <div id="cartItem">Your cart is empty</div>
+        <div class="foot">
+            <h3>Total</h3>
+            <h2 id="total">₹ 0.00</h2>
+            <a href="payment.html">
+            <button type="button">Place order</button>
+            </a>
+        </div>
+    </div>
+
+    <script src="js/fruitaddtocart.js"></script>
+    <footer><script src="js/footer.js"></script></footer>
+</body>
+<footer><script src="js/footer.js"></script>
+</footer>
+</html>

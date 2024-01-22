@@ -1,0 +1,124 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="img/small.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="img/small.png">
+    <title>Payment.in</title>
+    <link rel="stylesheet" href="css/payment.css">
+</head>
+
+<body style="color: bisque;">
+    <a href="index.html"><img src="img/sm.png" class="brand-logo" alt=""></a>
+    <div class="container">
+        <h3 style="font-family:Arial, Helvetica, sans-serif">Billing address</h3>
+        <form id="billingForm">
+            <div class="inputBox">
+                <span>Full name:</span>
+                <input type="text" class="text" placeholder="Ex:-praneel">
+            </div>
+            <div class="inputBox">
+                <span>Email id:</span>
+                <input type="text" class="text" placeholder="Ex:-abcd123@gmail.com">
+            </div>
+            <div class="inputBox">
+                <span>Address:</span>
+                <input type="text" class="text" placeholder="Enter your home/apartment/office Address">
+            </div>
+            <div class="inputBox">
+                <span>City:</span>
+                <input type="text" class="text" placeholder="Bangalore">
+            </div>
+            <div class="inputBox">
+                <span>State:</span>
+                <input type="text" class="text" placeholder="India">
+            </div>
+            <div class="inputBox">
+                <span>ZIP code:</span>
+                <input type="text" placeholder="5600xx">
+            </div>
+
+        </form>
+    </div>
+    <div class="container">
+        <h3 style="font-family: Arial, Helvetica, sans-serif">Payment</h3>
+        <form id="paymentForm">
+            <div class="inputBox">
+                <span>Payment accepted :</span>
+                <img src="imgcard_img.png" alt="">
+            </div>
+            <div class="inputBox">
+                <span>Name on card:</span>
+                <input type="text" class="text" placeholder="Ex:-Master">
+            </div>
+            <div class="inputBox">
+                <span>Credit card Number:</span>
+                <input type="text" class="text" placeholder="1111-2222-3333-4444">
+            </div>
+            <div class="inputBox">
+                <span>Expiry Month:</span>
+                <input type="text" class="text" placeholder="January">
+            </div>
+            <div class="inputBox">
+                <span>Expiry year:</span>
+                <input type="text" class="text" placeholder="India">
+            </div>
+            <div class="inputBox">
+                <span>CVV:</span>
+                <input type="text" placeholder="123">
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <div class="inputBox">
+            <span>Payment Method:</span>
+    
+    
+            <label>
+                <input type="radio" name="paymentMethod" value="upi" onclick="selectPaymentOption('upi')">
+                <img src="img/unified-payment-interface-upi-logo-500F8DD29F-seeklogo.com.png" alt="UPI" class="Brandlogo">
+                UPI
+            </label>
+    
+            <label>
+                <input type="radio" name="paymentMethod" value="cash" onclick="selectPaymentOption('cash')">
+                <img src="img/394-3943480_cash-on-delivery-icon-hd-png-download.png" alt="Cash">
+                Cash
+            </label>
+    
+            <input type="text" placeholder="Enter UPI ID " id="paymentDetails">
+        </div>
+    </div>
+    <a href="Orderconformation.html">
+    <button class="submit" onclick="submitForm()" >Next proccess</button>
+    </a>
+
+    
+    <script>
+        function submitForm() {
+    
+            var billingFormData = new FormData(document.getElementById('billingForm'));
+            var paymentFormData = new FormData(document.getElementById('paymentForm'));
+
+            var billingData = {};
+            billingFormData.forEach((value, key) => {
+                billingData[key] = value;
+            });
+
+            var paymentData = {};
+            paymentFormData.forEach((value, key) => {
+                paymentData[key] = value;
+            });
+
+            console.log('Billing Data:', billingData);
+            console.log('Payment Data:', paymentData);
+        }
+
+        function selectPaymentOption(option) {
+            console.log('Selected Payment Option:', option);
+        }
+    </script>
+</body>
+
+</html>

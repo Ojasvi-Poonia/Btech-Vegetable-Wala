@@ -1,0 +1,29 @@
+@import 'nav.css';
+@import 'footer.css';
+@import 'fv.css';
+@import 'product1.css';
+
+.hero-section{
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-image: url(../img/produce.jpeg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section .logo{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+.hero-section .sub-heading{
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-weight: 300;
+}
+

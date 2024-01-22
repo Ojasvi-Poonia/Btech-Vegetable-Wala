@@ -1,0 +1,118 @@
+@import 'nav.css';
+@import 'footer.css';
+@import 'banner.css';
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #feffd8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.vegetable {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.vegetable img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.vegetable h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.vegetable p {
+    color: #555;
+}
+
+.add-to-cart {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #45a049;
+}
+
+:root {
+                    --green: green;
+                    --black: #130f40;
+                    --light-color: #666;
+                    --box-shadow: 0 .2 rem 1rem grba(0,0,0.1);
+                    --border: 2rem solid grba(0,0,0.1);
+                    --outline: .1rem solid grba(0,0,0.1);
+}    
+                
+.header {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    display: flex;
+                
+}
+                
+                
+                section
+                {
+                    padding: 2rem 9%;
+                }
+                
+                
+                .banner
+                {
+                    display: flex;
+                    justify-content: center;
+                    border: 0PX solid;
+                    background-position: center;
+                    background-size: cover;
+                    padding-top: 5rem;
+                    padding-bottom: 6%;
+                }
+                
+                
+                
+                .banner .content
+                {
+                    text-align:center;
+                    width: 60rem;
+                   
+                }
+                
+                
+                
+                .banner .content h3
+                {
+                    color: var(--black);
+                    font-size: 4rem;
+                }
+
+                .banner .content span
+                {
+                    color: var(--green);
+                    font-size: 4rem;
+                }
+
+

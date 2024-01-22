@@ -1,0 +1,51 @@
+.container {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.inputBox span {
+    font-size: 18px;
+    color: #000;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.inputBox input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    outline: none;
+}
+
+.inputBox input[type="text"]:focus {
+    border-bottom: 2px solid #4CAF50;
+}
+
+h3 {
+    color: #4CAF50;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.submit {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.Brandlogo{
+    height: 50px;
+
+}
